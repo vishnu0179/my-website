@@ -400,18 +400,18 @@ Version:	1.1
 #personal-area .personal-single {
 	position: relative;
 	z-index: 3;
-}
+}*/
 #personal-area .personal-single::before {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url('images/banner-pattern.png');
+	background: url(images/bg.jpg);
 	opacity: 0.5;
 	content: "";
 	z-index: -1;
-}
+}/*
 #personal-area .personal-single::after {
 	position: absolute;
 	left: 0;
@@ -873,7 +873,7 @@ Version:	1.1
 /* About bubble*/
 
 .talk-bubble {
-	margin: 40px;
+	margin: 10px;
   display: inline-block;
   position: relative;
 	width: auto;
@@ -889,9 +889,9 @@ Version:	1.1
 	position: absolute;
 	width: 0;
 	height: 0;
-  left: -15px;
+  left: -30px;
 	right: auto;
-  top: 7px;
+  top: 57px;
 	bottom: auto;
 	border: 30px solid;
 	border-color: rgb(231, 231, 222) transparent transparent transparent;
@@ -904,10 +904,21 @@ Version:	1.1
   color: #252525;
 }
 
-.prog-lang img{
-	padding: 6px;
+.prog-lang img, .lang img{
+	padding: 5px;
 	height: 48px;
-	width: 48px;	
+	width: 48px;
+	
+}
+
+.prog-lang {
+	padding-left: 0px; padding-right: 0px;
+	justify-content: space-around;
+	display: flex;
+}
+
+.course-cert {
+	margin-bottom: 10px;
 }
 
 /*=======================
@@ -1116,6 +1127,12 @@ Version:	1.1
 	width:100%;
 	z-index:10;
 }
+
+.portfolio-head img {
+	height : 285px;
+	width: 428px;
+}
+
 #portfolio .portfolio-single:hover img{
 	transform:scale(1.1);
 }
@@ -1367,13 +1384,14 @@ Version:	1.1
 	CountDown CSS
 =========================*/
 #countdown {
-	background-image: url(http://via.placeholder.com/1500x800);
+	background-image: url(https://iosguides.net/wp-content/uploads/2013/07/No-Zoom-effect.jpg);
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	padding:70px 0 100px;
+	padding:50px 0 50px;
+	margin-top: 30px;
 }
 #countdown::before {
 	position: absolute;
@@ -2758,7 +2776,7 @@ Version:	1.1
 	margin:0px 5px;
 }
 #footer .social {
-	text-align: right;
+	text-align: center;
 }
 #footer .social li{
 	margin-right:15px;
